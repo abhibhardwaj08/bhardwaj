@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function lucy(x)
+            {
+                document.getElementById("result").value+=x;
+            }
+            function saa()
+            {
+                var y=document.getElementById("result").value;
+                var z=eval(y);
+                document.getElementById("result").value=z
+            }
+        </script>
+        <body>
+            <table border="5" bgcolor="skyblue" align="center">
+                <tr>
+                    <td colspan="4"><input type="text" id="result" name="value" required><br></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="lucy(7)">7</button></td>
+                    <td><button type="button" onclick="lucy(8)">8</button></td>
+                    <td><button type="button" onclick="lucy(9)">9</button></td>
+                    <td><button type="button" onclick="lucy('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="lucy(4)">4</button></td>
+                    <td><button type="button" onclick="lucy(5)">5</button></td>
+                    <td><button type="button" onclick="lucy(6)">6</button></td>
+                    <td><button type="button" onclick="lucy('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="lucy(1)">1</button></td>
+                    <td><button type="button" onclick="lucy(2)">2</button></td>
+                    <td><button type="button" onclick="lucy(3)">3</button></td>
+                    <td><button type="button" onclick="lucy('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="lucy('.')">.</button></td>
+                    <td><button type="button" onclick="lucy(0)">0</button></td>
+                    <td><button type="button" onclick="saa()">=</button></td>
+                    <td><button type="button" onclick="lucy('+')">+</button></td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
